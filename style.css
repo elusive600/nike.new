@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -174,16 +175,36 @@ header {
 
 /* fift-block */
 .collection {
-    background: linear-gradient(to right, #F9F6F1 50%,  #F4F4F4 50%);
-}
-
-.categories {
     display: flex;
-    justify-content: space-around;
-    padding: 60px 0;
+    justify-content: center;
 }
 
-.categories strong {
+.categories-man {
+    background-color:#F9F6F1 ;
+    width: 100%;
+}
+
+.collection-man {
+    position: relative;
+    width: 560px;
+    margin-left:auto;
+    padding: 60px 0 0 0;
+}
+
+.categories-woman {
+    background-color:#F4F4F4 ;
+    width: 100%;
+}
+
+.collection-woman {
+    position: relative;
+    width: 560px;
+    margin-right:auto;
+    padding: 60px 0 0 0;
+}
+
+.collection-man strong,
+.collection-woman strong {
     display: block;
     font-size: 24px;
     font-weight: 500;
@@ -191,22 +212,32 @@ header {
     margin-bottom: 18px;
 }
 
-.categories strong span {
+.collection-man strong span,
+.collection-woman strong span {
     font-weight: 300;
 }
 
-.categories p {
+.collection-man p,
+.collection-woman p {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 1px;
 }
 
-.categories a {
+.collection-man a,
+.collection-woman a {
+    display: inline-block;
     border: 1px solid #D7B399;
     background-color: #D7B399;
     padding: 5px 30px;
 }
 
+.collection-man img,
+.collection-woman img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 /* item */
 .items-new {
@@ -279,7 +310,9 @@ header {
 }
 
 .mission img {
-    text-align: center;
+    margin: 0 auto 15px auto;
+    display: block;
+    ;
 }
 
 .mission p {
@@ -326,7 +359,12 @@ header {
 }
 
 /* footer */
-footer {
+
+
+
+footer .wrap{
+    display: flex;
+    justify-content: space-between;
     font-weight: 400;
     font-size: 14px;
     color: #212121;
