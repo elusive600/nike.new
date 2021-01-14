@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 44px 10px 33px 10px;
+    padding: 44px 0px 33px 0px;
     color: black;
 }
 
@@ -105,7 +105,7 @@ header {
 
 .text-news a {
     display: block;
-    width: 175px;
+    width: 240px;
     text-decoration: none;
     font-size: 16px;
     font-weight: normal;
@@ -177,6 +177,7 @@ header {
 .collection {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 .categories-man {
@@ -188,7 +189,7 @@ header {
     position: relative;
     width: 560px;
     margin-left:auto;
-    padding: 60px 0 0 0;
+    padding: 64px 0 0 23px;
 }
 
 .categories-woman {
@@ -200,7 +201,7 @@ header {
     position: relative;
     width: 560px;
     margin-right:auto;
-    padding: 60px 0 0 0;
+    padding: 64px 0 0 30px;
 }
 
 .collection-man strong,
@@ -226,16 +227,25 @@ header {
 
 .collection-man a,
 .collection-woman a {
+    position: relative;
     display: inline-block;
     border: 1px solid #D7B399;
     background-color: #D7B399;
-    padding: 5px 30px;
+    padding: 14px 40px;
+    margin: 35px 0 48px 0;
+}
+
+.collection-man a img,
+.collection-woman a img {
+    position: absolute;
+    right: 36%;
+    bottom: 39%; 
 }
 
 .collection-man img,
 .collection-woman img {
     position: absolute;
-    right: 0;
+    right: 19px;
     bottom: 0;
 }
 
